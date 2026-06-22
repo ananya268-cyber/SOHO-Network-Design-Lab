@@ -46,7 +46,7 @@ show ip dhcp binding
 #to save configuration
 copy running-config startup-config
 
-![router int config](screenshots/router_int_config.png)
+![router int config](screenshots/router-int-config.png)
 ### Understanding the above commands
 #to enter global configuration mode and configuring router's interfaces
 - To move from User EXEC mode (>) to Privileged EXEC mode (#) we use en/enable as in this more you can view configurations and make administrative changes.
@@ -54,15 +54,15 @@ copy running-config startup-config
 - Interface g0/1 serves as the default gateway since all the devices in the SOHO devices are connected to this router through switch. To activate the interface we use no shut/no shutdown.
 - Interface g0/0 represnets router's connection to the internet.
 
-![router dhcppool](screenshots/router_dhcppool.png)
+![router dhcppool](screenshots/router-dhcppool.png)
 #reserve static ip and creating DHCP pool
 - Prevents the DHCP server from assigning addresses between 192.168.10.1 and 192.168.10.20 as these addresses are assigned to infrastructure devices such as the router, switch, and printer which require predictable addresses and should not receive dynamically assigned IP addresses.
 - Creates a DHCP pool named OFFICE and specifies network address, default gateway and dns server. DHCP automatically provides IP configuration to client devices, reducing manual configuration and making the network easier to manage.
 - show ip interface brief: Displays interface IP addresses and operational status to ensure interfaces are configured correctly.
 
-![router interface brief](screenshots/router_interface_brief.png)
+![router interface brief](screenshots/router-interface-brief.png)
 - show ip dhcp pool: Displays DHCP pool information, including available and leased addresses.
-![dhcp binding pcs&printer](screenshots/dhcp_binding_pcs&printer.png)
+![dhcp binding pcs&printer](screenshots/dhcp-binding-pcs&printer.png)
 - show ip dhcp binding: Displays all client devices that have obtained IP addresses from the DHCP server.
 
 #save the Configuration
