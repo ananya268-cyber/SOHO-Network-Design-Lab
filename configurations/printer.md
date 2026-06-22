@@ -41,5 +41,11 @@ DNS Server: 8.8.8.8
 ping 192.168.10.4
 ```
 
+<h3 align="center">Ping Test: Laptop0 → Printer</h3>
+
+<p align="center">
+<img src="../screenshots/lap0-printer.png" alt="Laptop0 Ping Printer" width="600">
+</p>
+
 - Confirms that the printer is reachable over the network
 - Verifies that the static IP configuration is working correctly
