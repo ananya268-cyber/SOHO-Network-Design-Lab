@@ -46,7 +46,12 @@ WAN Network: Simulated ISP Connection
 #to save configuration
 - copy running-config startup-config
 
-![router int config](../screenshots/router-int-config.png)
+<h3 align="center">Router Interface Configuration</h3>
+
+<p align="center">
+  <img src="../screenshots/router-int-config.png" alt="Router Int Config" width="600">
+</p>
+
 ### Understanding the above commands
 #to enter global configuration mode and configuring router's interfaces
 - To move from User EXEC mode (>) to Privileged EXEC mode (#) we use en/enable as in this more you can view configurations and make administrative changes.
@@ -54,16 +59,31 @@ WAN Network: Simulated ISP Connection
 - Interface g0/1 serves as the default gateway since all the devices in the SOHO devices are connected to this router through switch. To activate the interface we use no shut/no shutdown.
 - Interface g0/0 represnets router's connection to the internet.
 
-![router dhcppool](../screenshots/router-dhcppool.png)
+<h3 align="center">DHCP Pool Setup</h3>
+
+<p align="center">
+  <img src="../screenshots/router-dhcppool.png" alt="Router DHCP Pool" width="600">
+</p>
+
 #reserve static ip and creating DHCP pool
 - Prevents the DHCP server from assigning addresses between 192.168.10.1 and 192.168.10.20 as these addresses are assigned to infrastructure devices such as the router, switch, and printer which require predictable addresses and should not receive dynamically assigned IP addresses.
 - Creates a DHCP pool named OFFICE and specifies network address, default gateway and dns server. DHCP automatically provides IP configuration to client devices, reducing manual configuration and making the network easier to manage.
 - show ip interface brief: Displays interface IP addresses and operational status to ensure interfaces are configured correctly.
 
-![router interface brief](../screenshots/router-interface-brief.png)
+<h3 align="center">Interface Brief</h3>
+
+<p align="center">
+  <img src="../screenshots/router-interface-brief.png" alt="Router Interface Brief" width="600">
+</p>
+
 - show ip dhcp pool: Displays DHCP pool information, including available and leased addresses.
 
-![dhcp binding pcs&printer](../screenshots/dhcp-binding-pcs&printer.png)
+<h3 align="center">DHCP Bindings</h3>
+
+<p align="center">
+  <img src="../screenshots/dhcp-binding-pcs&printer.png" alt="DHCP Binding" width="600">
+</p>
+
 - show ip dhcp binding: Displays all client devices that have obtained IP addresses from the DHCP server.
 #save the Configuration
 - copy running-config startup-config: saves the active configuration to NVRAM. Without saving, all configurations would be lost after a router reboot or power failure.
