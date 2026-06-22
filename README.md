@@ -193,7 +193,11 @@ show ip interface brief
 ```
 
 ### Understanding the above commands
+<h3 align="center">Switch CLI Configuration(Security + Management)</h3>
 
+<p align="center">
+<img src="../screenshots/switch-interface1.png" alt="Switch CLI Config" width="600">
+</p>
 
 **to configure basic switch security and management setup**
 
@@ -206,6 +210,12 @@ show ip interface brief
 - *no shutdown* activates the VLAN interface so it moves from administratively down to up state and becomes operational.
 - *ip default-gateway* defines the router IP address used for managing traffic outside the local network, enabling remote management access.
 - *interface range fa0/8-24 + shutdown* disables unused switch ports to reduce security risks such as unauthorized device connections and network attacks.
+
+<h3 align="center">Switch Save & Verification</h3>
+
+<p align="center">
+<img src="../screenshots/switch-interface2.png" alt="Switch Save and Verify" width="600">
+</p>
 
 **to save configuration and verify switch status**
 
