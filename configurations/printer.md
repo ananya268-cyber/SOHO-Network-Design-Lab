@@ -17,4 +17,14 @@ Default Gateway: 192.168.10.1
 DNS Server: 8.8.8.8  
 ```
 
+<h3 align="center">Printer IP & Subnet</h3>
 
+<p align="center">
+<img src="../screenshots/printer-ip&subnet.png" alt="Printer IP and Subnet Config" width="600">
+</p>
+
+<h3 align="center">Printer Gateway & DNS</h3>
+
+<p align="center">
+<img src="../screenshots/printer-gateway&dns.png" alt="Printer Gateway and DNS Config" width="600">
+</p>
