@@ -2,7 +2,7 @@
 Designed and simulated a Small Office/Home Office (SOHO) network for a 10-user business using Cisco Packet Tracer, featuring DHCP, wireless connectivity, IP addressing, switch security, and end-to-end connectivity testing.
 
 ## Network Topology
-![SOHO Network Topology](../diagrams/topology.png)
+![SOHO Network Topology](diagrams/topology.png)
 
 *In this project the network follows a star topology, where all the other devices are connected to a central switch making it easier to manage, troubleshoot and expand. Devices connected to switch are end devices like PC, Printer and Access Point.* 
 
@@ -28,10 +28,16 @@ Designed and simulated a Small Office/Home Office (SOHO) network for a 10-user b
 - Switch → Access Point-PT-AC
 - Access Point-PT-AC → Laptop0, Laptop1, and Laptop2 (wireless)
 
+## Router Details
+- Device: Cisco 1941 Router
+- Role: Default Gateway, DHCP Server, and WAN Connectivity Provider
+- LAN Network: 192.168.10.0/24
+- WAN Network: Simulated ISP Connection
+
 <h3 align="center">Router Interface Configuration</h3>
 
 <p align="center">
-  <img src="../screenshots/router-int-config.png" alt="Router Int Config" width="600">
+  <img src="screenshots/router-int-config.png" alt="Router Int Config" width="600">
 </p>
 
 ### Understanding the above commands
@@ -44,7 +50,7 @@ Designed and simulated a Small Office/Home Office (SOHO) network for a 10-user b
 <h3 align="center">DHCP Pool Setup</h3>
 
 <p align="center">
-  <img src="../screenshots/router-dhcppool.png" alt="Router DHCP Pool" width="600">
+  <img src="screenshots/router-dhcppool.png" alt="Router DHCP Pool" width="600">
 </p>
 
 #reserve static ip and creating DHCP pool
@@ -55,7 +61,7 @@ Designed and simulated a Small Office/Home Office (SOHO) network for a 10-user b
 <h3 align="center">Interface Brief</h3>
 
 <p align="center">
-  <img src="../screenshots/router-interface-brief.png" alt="Router Interface Brief" width="600">
+  <img src="screenshots/router-interface-brief.png" alt="Router Interface Brief" width="600">
 </p>
 
 - show ip dhcp pool: Displays DHCP pool information, including available and leased addresses.
@@ -63,7 +69,7 @@ Designed and simulated a Small Office/Home Office (SOHO) network for a 10-user b
 <h3 align="center">DHCP Bindings</h3>
 
 <p align="center">
-  <img src="../screenshots/dhcp-binding-pcs&printer.png" alt="DHCP Binding" width="600">
+  <img src="screenshots/dhcp-binding-pcs&printer.png" alt="DHCP Binding" width="600">
 </p>
 
 - show ip dhcp binding: Displays all client devices that have obtained IP addresses from the DHCP server.
