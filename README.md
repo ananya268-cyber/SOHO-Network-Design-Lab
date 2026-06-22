@@ -246,13 +246,13 @@ DNS Server: 8.8.8.8
 <h3 align="center">Printer IP & Subnet</h3>
 
 <p align="center">
-<img src="../screenshots/printer-ip&subnet.png" alt="Printer IP and Subnet Config" width="600">
+<img src="screenshots/printer-ip&subnet.png" alt="Printer IP and Subnet Config" width="600">
 </p>
 
 <h3 align="center">Printer Gateway & DNS</h3>
 
 <p align="center">
-<img src="../screenshots/printer-gateway&dns.png" alt="Printer Gateway and DNS Config" width="600">
+<img src="screenshots/printer-gateway&dns.png" alt="Printer Gateway and DNS Config" width="600">
 </p>
 
 - Assigns a static IP to the printer so it always remains reachable at the same address.
@@ -270,7 +270,7 @@ ping 192.168.10.4
 <h3 align="center">Ping Test: Laptop0 → Printer</h3>
 
 <p align="center">
-<img src="../screenshots/lap0-printer.png" alt="Laptop0 Ping Printer" width="400">
+<img src="screenshots/lap0-printer.png" alt="Laptop0 Ping Printer" width="400">
 </p>
 
 - Confirms that the printer is reachable over the network
