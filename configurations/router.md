@@ -1,8 +1,8 @@
 ## Router Details
-Device: Cisco 1941 Router
-Role: Default Gateway, DHCP Server, and WAN Connectivity Provider
-LAN Network: 192.168.10.0/24
-WAN Network: Simulated ISP Connection
+- Device: Cisco 1941 Router
+- Role: Default Gateway, DHCP Server, and WAN Connectivity Provider
+- LAN Network: 192.168.10.0/24
+- WAN Network: Simulated ISP Connection
 
 ### Commands used in router CLI
 #to enter global configuration mode
