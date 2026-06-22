@@ -28,3 +28,18 @@ DNS Server: 8.8.8.8
 <p align="center">
 <img src="../screenshots/printer-gateway&dns.png" alt="Printer Gateway and DNS Config" width="600">
 </p>
+
+- Assigns a static IP to the printer so it always remains reachable at the same address.
+- Printers require fixed IPs to ensure consistent access across the network.
+- DHCP is avoided to prevent IP address changes.
+
+### 2. Verification
+
+**test connectivity**
+
+```bash
+ping 192.168.10.4
+```
+
+- Confirms that the printer is reachable over the network
+- Verifies that the static IP configuration is working correctly
