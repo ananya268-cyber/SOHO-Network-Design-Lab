@@ -5,46 +5,61 @@
 - WAN Network: Simulated ISP Connection
 
 ### Commands used in router CLI
-#to enter global configuration mode
-- en 
-- config t 
+**to enter global configuration mode**
+```bash
+en 
+config t 
+```
+**configuring LAN interface**
+```bash
+int g0/1 
+ip address 192.168.10.1 255.255.255.0 
+no shut 
+exit
+```
+**configuring WAN interface**
+```bash
+int g0/0 
+ip address 200.1.1.2 255.255.255.0 
+no shut 
+exit
+```
+**reserve static IP addresses**
+```bash
+ip dhcp excluded-address 192.168.10.1 192.168.10.20
+```
+**configuring DHCP pool**
+```bash
+ip dhcp pool OFFICE 
+network 192.168.10.0 255.255.255.0 
+default-router 192.168.10.1 
+dns-server 8.8.8.8 
+exit
+```
+**to verify interface status in priviledged exec mode**
+```bash
+show ip interface brief
+```
 
-#configuring LAN interface
-- int g0/1 
-- ip address 192.168.10.1 255.255.255.0 
-- no shut 
-- exit
+***to verify interface status in global configuration mode***
+```bash
+do show ip interface brief
+```
 
-#configuring WAN interface
-- int g0/0 
-- ip address 200.1.1.2 255.255.255.0 
-- no shut 
-- exit
+**to verify DHCP pool**
+```bash
+show ip dhcp pool
+```
 
-#reserve static IP addresses
-- ip dhcp excluded-address 192.168.10.1 192.168.10.20
+**to verify DHCP leases**
+```bash
+show ip dhcp binding
+```
 
-#configuring DHCP pool
-- ip dhcp pool OFFICE 
-- network 192.168.10.0 255.255.255.0 
-- default-router 192.168.10.1 
-- dns-server 8.8.8.8 
-- exit
-
-#to verify interface status in priviledged exec mode
-- show ip interface brief 
-
-#to verify interface status in global configuration mode
-- do show ip interface brief
-
-#to verify DHCP pool
-- show ip dhcp pool
-
-#to verify DHCP leases
-- show ip dhcp binding
-
-#to save configuration
-- copy running-config startup-config
+**to save configuration**
+```bash
+copy running-config startup-config
+```
 
 <h3 align="center">Router Interface Configuration</h3>
 
