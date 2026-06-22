@@ -223,3 +223,55 @@ show ip interface brief
 - Without saving the configuration, all changes made during the session would be lost once the device is restarted.
 - *show ip interface brief* displays a summary of all interfaces, including their IP addresses and operational status.
 - It is used to quickly verify that VLAN 1 is active and that unused ports are in an administratively down state for security and proper configuration validation.
+
+## Printer Configuration
+
+### Printer Details
+- **Device:** Network Printer  
+- **Role:** Shared printing device in LAN  
+- **IP Address:** 192.168.10.4  
+- **Subnet Mask:** 255.255.255.0  
+- **Default Gateway:** 192.168.10.1  
+- **DNS Server:** 8.8.8.8  
+
+### 1. Configure Printer IP Settings
+
+```text
+IP Address: 192.168.10.4  
+Subnet Mask: 255.255.255.0  
+Default Gateway: 192.168.10.1  
+DNS Server: 8.8.8.8  
+```
+
+<h3 align="center">Printer IP & Subnet</h3>
+
+<p align="center">
+<img src="../screenshots/printer-ip&subnet.png" alt="Printer IP and Subnet Config" width="600">
+</p>
+
+<h3 align="center">Printer Gateway & DNS</h3>
+
+<p align="center">
+<img src="../screenshots/printer-gateway&dns.png" alt="Printer Gateway and DNS Config" width="600">
+</p>
+
+- Assigns a static IP to the printer so it always remains reachable at the same address.
+- Printers require fixed IPs to ensure consistent access across the network.
+- DHCP is avoided to prevent IP address changes.
+
+### 2. Verification
+
+**test connectivity**
+
+```bash
+ping 192.168.10.4
+```
+
+<h3 align="center">Ping Test: Laptop0 → Printer</h3>
+
+<p align="center">
+<img src="../screenshots/lap0-printer.png" alt="Laptop0 Ping Printer" width="400">
+</p>
+
+- Confirms that the printer is reachable over the network
+- Verifies that the static IP configuration is working correctly
